@@ -11,20 +11,22 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import pl.droidsonroids.gif.GifImageView;
+
 public class MainActivity extends AppCompatActivity {
 
-    private static int SPLASH_SCREEN = 3000;
+    private static int SPLASH_SCREEN = 7000;
 
     //variables
     Animation topAnim, bottomAnim;
-    ImageView image;
+    GifImageView image;
     TextView logo, slogan;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-      //  getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
         //Animation
@@ -34,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Hooks
 
-        image = findViewById(R.id.imageView);
+        image = findViewById(R.id.gifImageView3);
         logo = findViewById(R.id.app_name);
         slogan = findViewById(R.id.greet);
 
@@ -45,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(MainActivity.this, Dashboard.class);
+                Intent intent = new Intent(MainActivity.this, login.class);
                 startActivity(intent);
                 finish();
             }

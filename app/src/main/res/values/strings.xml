@@ -2,6 +2,8 @@
     <string name="app_name">Work From Home</string>
     <string name="name">Work From Home</string>
     <string name="greet">Stay Home Stay Safe</string>
+    <string name="app_greet">Hello there, Welcome!</string>
+    <string name="Continue">Sign in to continue</string>
 
 
 </resources>
