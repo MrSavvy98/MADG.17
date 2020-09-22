@@ -9,6 +9,8 @@
     <string name="Forgot">Forgot Password?</string>
     <string name="Lg">Login</string>
     <string name="Nuser">New User?  SIGN UP</string>
+    <string name="Welcome">Welcome!</string>
+    <string name="sign_up_to">Sign Up for new start</string>
 
 
 </resources>
