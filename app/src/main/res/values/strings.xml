@@ -4,6 +4,11 @@
     <string name="greet">Stay Home Stay Safe</string>
     <string name="app_greet">Hello there, Welcome!</string>
     <string name="Continue">Sign in to continue</string>
+    <string name="UN">Username</string>
+    <string name="PW">Password</string>
+    <string name="Forgot">Forgot Password?</string>
+    <string name="Lg">Login</string>
+    <string name="Nuser">New User?  SIGN UP</string>
 
 
 </resources>
