@@ -11,6 +11,11 @@
     <string name="Nuser">New User?  SIGN UP</string>
     <string name="Welcome">Welcome!</string>
     <string name="sign_up_to">Sign Up for new start</string>
+    <string name="LR">Leave Requests</string>
+    <string name="view_leave">View Leave</string>
+    <string name="apply_leave">Apply Leave</string>
+    <string name="Edit_leave">Edit Leave</string>
+    <string name="delete_view">Delete View</string>
 
 
 </resources>

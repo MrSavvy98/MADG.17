@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Leave">
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="371dp"
+        android:layout_height="513dp"
+        android:background="@drawable/box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="130dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/workfromhome_lg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/bungee"
+        android:text="@string/LR"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/greet"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.215" />
+
+    <LinearLayout
+        android:layout_width="235dp"
+        android:layout_height="333dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="1.0"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn_add_leave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d2e0f7"
+
+            android:text="@string/apply_leave"
+            android:textColor="#000"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="255dp" />
+
+        <Button
+            android:id="@+id/btn_view_leave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#d2e0f7"
+            android:text="@string/view_leave"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="417dp" />
+
+        <Button
+            android:id="@+id/btn_edit_leave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#d2e0f7"
+            android:text="@string/Edit_leave"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="417dp" />
+
+        <Button
+            android:id="@+id/btn_delete_leave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#d2e0f7"
+            android:text="@string/delete_view"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="417dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

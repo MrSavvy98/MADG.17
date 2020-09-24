@@ -55,8 +55,10 @@
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox"
+
             android:hint="@string/UN"
+            style=""
+
 
 
             >
@@ -99,14 +101,14 @@
             android:fontFamily="@font/antic"/>
 
         <Button
+            android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#000"
-            android:text="@string/Lg"
-            android:textColor="#fff"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            />
+            android:background="#000"
+            android:text="@string/Lg"
+            android:textColor="#fff" />
 
         <Button
             android:id="@+id/btn_signUp"

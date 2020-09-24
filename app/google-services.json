@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "979711746853",
+    "firebase_url": "https://work-from-home-d69f3.firebaseio.com",
+    "project_id": "work-from-home-d69f3",
+    "storage_bucket": "work-from-home-d69f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979711746853:android:9a7190dd74eddefd1e70cc",
+        "android_client_info": {
+          "package_name": "com.example.workfromhome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "979711746853-h51v3j1q83af8fe349j9022pcrf0elaj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAosBPt2I-VNJ_2iOUTjL0Dtf3DjmWpwyw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "979711746853-h51v3j1q83af8fe349j9022pcrf0elaj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
