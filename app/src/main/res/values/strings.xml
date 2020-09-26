@@ -16,6 +16,11 @@
     <string name="apply_leave">Apply Leave</string>
     <string name="Edit_leave">Edit Leave</string>
     <string name="delete_view">Delete View</string>
+    <string name="view_profile">View Profile</string>
+    <string name="attendance">Attendance</string>
+    <string name="leave_request">Leave Requests</string>
+    <string name="view_tasks">View Tasks</string>
+    <string name="progress">Progress Reports</string>
 
 
 </resources>
