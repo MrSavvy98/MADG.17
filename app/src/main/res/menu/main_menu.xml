@@ -11,7 +11,7 @@
 
                     android:id="@+id/nav_login"
                     android:icon="@drawable/login_icon"
-                    android:title="Login"
+                    android:title="@string/Lg"
 
 
                     />
@@ -20,7 +20,7 @@
 
                     android:id="@+id/nav_profile"
                     android:icon="@drawable/view_profile_icon"
-                    android:title="Profile"
+                    android:title="@string/view_profile"
 
 
                     />
@@ -46,7 +46,7 @@
 
             android:id="@+id/nav_home"
             android:icon="@drawable/home_icon"
-            android:title="Home"
+            android:title="@string/home"
 
             />
 
@@ -55,7 +55,7 @@
 
             android:id="@+id/nav_attendance"
             android:icon="@drawable/attendance_icon"
-            android:title="Attendance"
+            android:title="@string/attendance"
 
             />
 
@@ -63,7 +63,7 @@
 
             android:id="@+id/nav_leave"
             android:icon="@drawable/leave_request_icon"
-            android:title="Leave Requests"
+            android:title="@string/LR"
 
             />
 
@@ -71,7 +71,7 @@
 
             android:id="@+id/nav_viewTasks"
             android:icon="@drawable/view_task_icon"
-            android:title="View Tasks"
+            android:title="@string/view_tasks"
 
             />
 
@@ -79,7 +79,15 @@
 
             android:id="@+id/nav_progressReports"
             android:icon="@drawable/progress_report_icon"
-            android:title="Progress Reports"
+            android:title="@string/progress"
+
+            />
+
+        <item
+
+            android:id="@+id/nav_aboutUs"
+            android:icon="@drawable/about_us_icon"
+            android:title="@string/aboutUS"
 
             />
     </group>

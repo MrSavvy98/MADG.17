@@ -1,4 +1,7 @@
 <resources>
+    
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="app_name">Work From Home</string>
     <string name="name">Work From Home</string>
     <string name="greet">Stay Home Stay Safe</string>
@@ -21,6 +24,8 @@
     <string name="leave_request">Leave Requests</string>
     <string name="view_tasks">View Tasks</string>
     <string name="progress">Progress Reports</string>
+    <string name="aboutUS">About Us</string>
+    <string name="home">Home</string>
 
 
 </resources>
