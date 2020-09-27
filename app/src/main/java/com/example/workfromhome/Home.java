@@ -15,16 +15,16 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
 
-        Button btn1 =(Button) findViewById(R.id.btn_leaveRequest);
-
-        btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent intent = new Intent(Home.this, Leave.class);
-                startActivity(intent);
-            }
-        });
+//        Button btn1 =(Button) findViewById(R.id.btn_leaveRequest);
+//
+//        btn1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                Intent intent = new Intent(Home.this, Leave.class);
+//                startActivity(intent);
+//            }
+//        });
 
 
 
