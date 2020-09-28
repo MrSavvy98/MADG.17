@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
 
-        <item android:title="Profile">
+    <item android:title="Profile">
 
-            <menu>
-
-                <item
-
-                    android:id="@+id/nav_login"
-                    android:icon="@drawable/login_icon"
-                    android:title="@string/Lg"
-
-
-                    />
+        <menu>
+            <group android:checkableBehavior="single">
 
                 <item
 
@@ -33,12 +24,11 @@
 
 
                     />
+            </group>
+        </menu>
 
-            </menu>
+    </item>
 
-        </item>
-
-    </group>
 
     <group android:checkableBehavior="single">
 
@@ -99,16 +89,16 @@
             <item
 
                 android:id="@+id/nav_share"
-                android:title="Share"
                 android:icon="@drawable/share_icon"
+                android:title="Share"
 
                 />
 
             <item
 
                 android:id="@+id/nav_rate"
-                android:title="Rate Us"
                 android:icon="@drawable/rate_us_icon"
+                android:title="Rate Us"
 
                 />
         </menu>

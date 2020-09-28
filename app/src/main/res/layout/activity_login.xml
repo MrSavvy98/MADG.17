@@ -57,10 +57,7 @@
             android:layout_height="wrap_content"
 
             android:hint="@string/UN"
-
-
-
-
+            android:background="@drawable/outline_box"
             >
 
 
@@ -77,7 +74,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/PW"
-            app:passwordToggleEnabled="true" >
+            app:passwordToggleEnabled="true"
+            android:background="@drawable/outline_box">
 
 
             <com.google.android.material.textfield.TextInputEditText
