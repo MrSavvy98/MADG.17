@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ApplyLeave"></activity>
+        <activity android:name=".Update"></activity>
+        <activity android:name=".ApplyLeave" />
         <activity android:name=".Leave" />
         <activity android:name=".Home" />
         <activity android:name=".SignUp" />

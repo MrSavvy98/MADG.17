@@ -8,9 +8,13 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Switch;
+import android.widget.Toast;
+
 import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.material.navigation.NavigationView;
@@ -39,6 +43,14 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         setSupportActionBar(toolbar);
 
         //navigation Drawer menu
+
+        //Hide or show items
+
+        Menu menu = navigationView.getMenu();
+        menu.findItem(R.id.nav_login).setVisible(false);
+        menu.findItem(R.id.nav_profile).setVisible(false);
+
+
         navigationView.bringToFront();
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
@@ -47,6 +59,11 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         //make the  menu icons  clickable
 
         navigationView.setNavigationItemSelectedListener(this);
+
+
+        //default home from the navigation menu
+
+        navigationView.setCheckedItem(R.id.nav_home);
 
 
 
@@ -67,6 +84,26 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        return false;
+
+        switch (item.getItemId()){
+
+
+            case R.id.nav_home:
+            break;
+
+            case R.id.nav_leave:
+                Intent intent = new Intent(Home.this, Leave.class );
+                startActivity(intent);
+                break;
+
+            case  R.id.nav_share:
+                Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
+                break;
+
+        }
+
+        drawerLayout.closeDrawer(GravityCompat.START);
+
+        return true;
     }
 }

@@ -15,16 +15,16 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/work_home_2"
-        android:transitionName="logo_image"/>
+        android:transitionName="logo_image" />
 
     <TextView
         android:id="@+id/logo_name"
-        android:transitionName="logo_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bungee"
         android:text="@string/app_greet"
         android:textSize="40sp"
+        android:transitionName="logo_name"
 
 
         />
@@ -46,26 +46,26 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
+        android:background="@drawable/box"
         android:orientation="vertical">
-
 
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/username"
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:hint="@string/UN"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/outline_box"
-            >
+            android:hint="@string/UN">
 
 
             <com.google.android.material.textfield.TextInputEditText
 
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                />
+                android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -73,9 +73,12 @@
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/outline_box"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
             android:hint="@string/PW"
-            app:passwordToggleEnabled="true"
-            android:background="@drawable/outline_box">
+            app:passwordToggleEnabled="true">
 
 
             <com.google.android.material.textfield.TextInputEditText
@@ -83,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
-                android:inputType="textPassword"/>
+                android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -91,23 +94,25 @@
         <Button
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:background="#00000000"
-            android:text="@string/Forgot"
             android:layout_gravity="right"
-            android:elevation="0dp"
             android:layout_margin="5dp"
-            android:fontFamily="@font/antic"/>
+            android:background="#00000000"
+            android:elevation="0dp"
+            android:fontFamily="@font/antic"
+            android:text="@string/Forgot" />
 
         <Button
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="5dp"
+            android:layout_marginRight="25dp"
             android:layout_marginBottom="5dp"
-            android:background="#000"
-            android:transitionName="login_button"
+            android:background="@drawable/custom_button"
             android:text="@string/Lg"
-            android:textColor="#fff" />
+            android:textColor="#3AE5E8"
+            android:transitionName="login_button" />
 
         <Button
             android:id="@+id/btn_signUp"
@@ -116,12 +121,11 @@
             android:layout_gravity="right"
             android:layout_margin="5dp"
             android:background="#00000000"
-            android:transitionName="btn_reg"
             android:elevation="0dp"
             android:fontFamily="@font/antic"
             android:text="@string/Nuser"
-            android:textColor="#000" />
-
+            android:textColor="#000"
+            android:transitionName="btn_reg" />
 
 
     </LinearLayout>

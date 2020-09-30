@@ -9,6 +9,15 @@
 
                 <item
 
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/login_icon"
+                    android:title="@string/Lg"
+
+
+                    />
+
+                <item
+
                     android:id="@+id/nav_profile"
                     android:icon="@drawable/view_profile_icon"
                     android:title="@string/view_profile"
@@ -85,6 +94,7 @@
     <item android:title="Communicate">
 
         <menu>
+            <group android:checkableBehavior="single">
 
             <item
 
@@ -101,6 +111,8 @@
                 android:title="Rate Us"
 
                 />
+
+            </group>
         </menu>
     </item>
 </menu>
