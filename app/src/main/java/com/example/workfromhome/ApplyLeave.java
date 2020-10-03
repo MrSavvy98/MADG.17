@@ -71,7 +71,7 @@ public class ApplyLeave extends AppCompatActivity {
                         reference.child(id).setValue(hel);
 
                         Toast.makeText(getApplicationContext(), "Leave Added", Toast.LENGTH_SHORT).show();
-                        Intent next = new Intent(ApplyLeave.this, Update.class);
+                        Intent next = new Intent(ApplyLeave.this, UpdateLeave.class);
 
                         next.putExtra(eid, id);
                         startActivity(next);

@@ -16,7 +16,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class Update extends AppCompatActivity {
+public class UpdateLeave extends AppCompatActivity {
 
     String upId;
     TextInputLayout emp_id, dept, lType, lDuration, from, to, reason;
@@ -26,7 +26,7 @@ public class Update extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_update);
+        setContentView(R.layout.activity_updateLeave);
 
         Intent intent =  getIntent();
         upId = intent.getStringExtra(ApplyLeave.eid);
@@ -114,7 +114,7 @@ public class Update extends AppCompatActivity {
 
               read.removeValue();
               Toast.makeText(getApplicationContext(),"Removing",Toast.LENGTH_SHORT).show();
-              Intent ii = new Intent(Update.this, Leave.class);
+              Intent ii = new Intent(UpdateLeave.this, Leave.class);
               startActivity(ii);
           }
       });
@@ -124,7 +124,7 @@ public class Update extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent i = new Intent(Update.this, Leave.class);
+        Intent i = new Intent(UpdateLeave.this, Leave.class);
         startActivity(i);
     }
 }

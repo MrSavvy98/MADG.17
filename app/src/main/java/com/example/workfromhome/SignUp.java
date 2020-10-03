@@ -129,9 +129,9 @@ public class SignUp extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Data saved successfully",Toast.LENGTH_SHORT).show();
 
                     //move next page
-                    Intent intent = new Intent(MainActivity.this, WorkViewActivity.class);
-                    intent.putExtra(ID,employeeID);
-                    startActivity(intent);
+//                    Intent intent = new Intent(MainActivity.this, WorkViewActivity.class);
+//                    intent.putExtra(ID,employeeID);
+//                    startActivity(intent);
 
                 }
             }
