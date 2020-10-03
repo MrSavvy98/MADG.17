@@ -41,6 +41,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar);
         leave = findViewById(R.id.leaveCard);
+        viewtasks = findViewById(R.id.taskCard);
 
         //toolbar
         setSupportActionBar(toolbar);
@@ -77,6 +78,16 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
             }
         });
 
+        viewtasks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Home.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
+
+
+
 //        profile.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
@@ -93,14 +104,8 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
 //            }
 //        });
 //
-//        viewtasks.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-////                Intent i = new Intent(Home.this, .class);
-////                startActivity(i);
-//            }
-//        });
-//
+
+
 //        progress.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
@@ -140,6 +145,11 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
                 Intent login = new Intent(Home.this, login.class );
                 Toast.makeText(this, "Logging Out", Toast.LENGTH_SHORT).show();
                 startActivity(login);
+                break;
+
+            case R.id.nav_viewTasks:
+                Intent task = new Intent(Home.this, MainActivity.class );
+                startActivity(task);
                 break;
 
             case R.id.nav_home:
