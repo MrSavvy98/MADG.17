@@ -20,7 +20,7 @@ public class Update extends AppCompatActivity {
 
     String upId;
     TextInputLayout emp_id, dept, lType, lDuration, from, to, reason;
-    Button btnUpdate;
+    Button btnUpdate,rmv;
     AddLeaveHelper updateLeave;
 
     @Override
@@ -41,6 +41,7 @@ public class Update extends AppCompatActivity {
         to = findViewById(R.id.view_to);
         reason = findViewById(R.id.view_reason);
         btnUpdate = findViewById(R.id.update);
+        rmv = findViewById(R.id.remove);
 
         updateLeave = new AddLeaveHelper();
 
@@ -103,6 +104,20 @@ public class Update extends AppCompatActivity {
                 });
             }
         });
+
+
+
+
+      rmv.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+
+              read.removeValue();
+              Toast.makeText(getApplicationContext(),"Removing",Toast.LENGTH_SHORT).show();
+              Intent ii = new Intent(Update.this, Leave.class);
+              startActivity(ii);
+          }
+      });
 
 
     }

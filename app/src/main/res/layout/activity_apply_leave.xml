@@ -215,17 +215,7 @@
         android:background="@drawable/custom_button"
         android:textColor="#3AE5E8"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginBottom="30dp"
-        android:background="@drawable/custom_button"
-        android:text="Back"
-        android:textColor="#3AE5E8"
-        />
+
 
     </LinearLayout>
 
