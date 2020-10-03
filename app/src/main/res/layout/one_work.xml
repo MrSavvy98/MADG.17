@@ -1,0 +1,41 @@
+<LinearLayout android:id="@+id/frm_category"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    android:weightSum="4"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+      <TextView
+          android:id="@+id/task"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:padding="15dp"
+          android:text="Task"
+          android:gravity="center"
+          android:layout_weight="1" />
+      <TextView
+          android:id="@+id/delay"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:padding="15dp"
+          android:text="Delay"
+          android:gravity="center"
+          android:layout_weight="1"/>
+      <TextView
+          android:id="@+id/work"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:padding="15dp"
+          android:text="Task"
+          android:gravity="center"
+          android:layout_weight="1"/>
+
+    <ImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_delete"
+        android:layout_weight="1"/>
+
+  </LinearLayout>

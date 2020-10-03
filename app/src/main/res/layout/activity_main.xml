@@ -55,17 +55,17 @@
             android:layout_margin="25dp"
             >
 
-            <EditText
-                android:id="@+id/empID"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:layout_marginBottom="20dp"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:hint="Employee ID"
-                android:background="@drawable/edit_text_bg"
-                />
+<!--            <EditText-->
+<!--                android:id="@+id/empID"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:padding="10dp"-->
+<!--                android:hint="Employee ID"-->
+<!--                android:background="@drawable/edit_text_bg"-->
+<!--                />-->
 
             <CalendarView
                 android:id="@+id/date"
