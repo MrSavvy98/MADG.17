@@ -26,7 +26,7 @@ public class UpdateLeave extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_updateLeave);
+        setContentView(R.layout.activity_updateleave);
 
         Intent intent =  getIntent();
         upId = intent.getStringExtra(ApplyLeave.eid);

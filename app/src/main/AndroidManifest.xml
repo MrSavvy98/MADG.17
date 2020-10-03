@@ -10,18 +10,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UpdateLeave"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".UpdateLeave" />
         <activity android:name=".ApplyLeave" />
         <activity android:name=".Leave" />
         <activity android:name=".Home" />
         <activity android:name=".SignUp" />
         <activity android:name=".login" />
         <activity android:name=".Dashboard" />
-
         <activity android:name=".Landing">
-
-
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

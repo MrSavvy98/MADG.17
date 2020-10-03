@@ -13,41 +13,41 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
-<!--       <RelativeLayout-->
-<!--            android:id="@+id/action_bar"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="48dp"-->
-<!--            android:background="@color/colorActionbarColor"-->
-<!--            app:layout_constraintTop_toTopOf="parent">-->
+        <!--       <RelativeLayout-->
+        <!--            android:id="@+id/action_bar"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="48dp"-->
+        <!--            android:background="@color/colorActionbarColor"-->
+        <!--            app:layout_constraintTop_toTopOf="parent">-->
 
-<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
-<!--&lt;!&ndash;                android:id="@+id/ivBack"&ndash;&gt;-->
-<!--&lt;!&ndash;                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"&ndash;&gt;-->
-<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
-<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
-<!--&lt;!&ndash;                android:layout_alignParentLeft="true"&ndash;&gt;-->
-<!--&lt;!&ndash;                android:layout_centerVertical="true"&ndash;&gt;-->
-<!--&lt;!&ndash;                android:layout_marginLeft="16dp"&ndash;&gt;-->
-<!--&lt;!&ndash;                android:background="?android:attr/selectableItemBackground"&ndash;&gt;-->
-<!--&lt;!&ndash;                android:clickable="true"&ndash;&gt;-->
-<!--&lt;!&ndash;                android:focusable="true"&ndash;&gt;-->
-<!--&lt;!&ndash;                android:gravity="center"&ndash;&gt;-->
-<!--&lt;!&ndash;                android:scaleType="center"&ndash;&gt;-->
-<!--&lt;!&ndash;                android:visibility="visible"&ndash;&gt;-->
-<!--&lt;!&ndash;                app:srcCompat="@drawable/ic_back_arrow" />&ndash;&gt;-->
+        <!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:id="@+id/ivBack"&ndash;&gt;-->
+        <!--&lt;!&ndash;                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_alignParentLeft="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_centerVertical="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:layout_marginLeft="16dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:background="?android:attr/selectableItemBackground"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:clickable="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:focusable="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:scaleType="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;                android:visibility="visible"&ndash;&gt;-->
+        <!--&lt;!&ndash;                app:srcCompat="@drawable/ic_back_arrow" />&ndash;&gt;-->
 
-<!--            <TextView-->
-<!--                android:id="@+id/txt_title"-->
-<!--                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_centerInParent="true"-->
-<!--                android:scaleType="center"-->
-<!--                android:textColor="#000000"-->
-<!--                android:text="@string/add_work_completed_heading"-->
-<!--                android:textSize="16dp" />-->
+        <!--            <TextView-->
+        <!--                android:id="@+id/txt_title"-->
+        <!--                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_centerInParent="true"-->
+        <!--                android:scaleType="center"-->
+        <!--                android:textColor="#000000"-->
+        <!--                android:text="@string/add_work_completed_heading"-->
+        <!--                android:textSize="16dp" />-->
 
-<!--        </RelativeLayout>-->
+        <!--        </RelativeLayout>-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -55,17 +55,17 @@
             android:layout_margin="25dp"
             >
 
-<!--            <EditText-->
-<!--                android:id="@+id/empID"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:ems="10"-->
-<!--                android:layout_marginBottom="20dp"-->
-<!--                android:layout_marginTop="20dp"-->
-<!--                android:padding="10dp"-->
-<!--                android:hint="Employee ID"-->
-<!--                android:background="@drawable/edit_text_bg"-->
-<!--                />-->
+            <!--            <EditText-->
+            <!--                android:id="@+id/empID"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:ems="10"-->
+            <!--                android:layout_marginBottom="20dp"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:padding="10dp"-->
+            <!--                android:hint="Employee ID"-->
+            <!--                android:background="@drawable/edit_text_bg"-->
+            <!--                />-->
 
             <CalendarView
                 android:id="@+id/date"
@@ -109,4 +109,3 @@
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
-
