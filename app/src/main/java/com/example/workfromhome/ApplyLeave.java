@@ -15,7 +15,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class ApplyLeave extends AppCompatActivity {
 
-    TextInputLayout emp_id, dept, lType, lDuration, from, to, reason;
+    TextInputLayout emp_id, dept, lType, lDuration, from, to, rsn;
     Button btn_next;
     public static String eid;
 
@@ -35,7 +35,7 @@ public class ApplyLeave extends AppCompatActivity {
         lDuration = findViewById(R.id.duration);
         from = findViewById(R.id.from);
         to = findViewById(R.id.to);
-        reason = findViewById(R.id.reason);
+        rsn = findViewById(R.id.reason);
         btn_next = findViewById(R.id.next);
 
         btn_next.setOnClickListener(new View.OnClickListener() {
@@ -64,11 +64,11 @@ public class ApplyLeave extends AppCompatActivity {
                         String duration = lDuration.getEditText().getText().toString();
                         String frm = from.getEditText().getText().toString();
                         String to1 = to.getEditText().getText().toString();
-                        String reason1 = reason.getEditText().getText().toString();
+                        String reason1 = rsn.getEditText().getText().toString();
 
                         AddLeaveHelper hel = new AddLeaveHelper(id, depart, type, duration, frm, to1, reason1);
 
-                        reference.child(emp_id.getEditText().toString()).setValue(hel);
+                        reference.child(id).setValue(hel);
 
                         Toast.makeText(getApplicationContext(), "Leave Added", Toast.LENGTH_SHORT).show();
                         Intent next = new Intent(ApplyLeave.this, Update.class);

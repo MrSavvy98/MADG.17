@@ -32,4 +32,11 @@ public class Leave extends AppCompatActivity {
 
 
     }
+
+
+    @Override
+    public void onBackPressed() {
+        Intent i = new Intent(Leave.this, Home.class);
+        startActivity(i);
+    }
 }

@@ -3,6 +3,7 @@ package com.example.workfromhome;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -26,6 +27,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
+    CardView leave,profile,attendance,viewtasks,progress,aboutus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar);
+        leave = findViewById(R.id.leaveCard);
 
         //toolbar
         setSupportActionBar(toolbar);
@@ -66,7 +69,53 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         navigationView.setCheckedItem(R.id.nav_home);
 
 
+        leave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Home.this, Leave.class);
+                startActivity(i);
+            }
+        });
 
+//        profile.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+////                Intent i = new Intent(Home.this, .class);
+////                startActivity(i);
+//            }
+//        });
+//
+//        attendance.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+////                Intent i = new Intent(Home.this, .class);
+////                startActivity(i);
+//            }
+//        });
+//
+//        viewtasks.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+////                Intent i = new Intent(Home.this, .class);
+////                startActivity(i);
+//            }
+//        });
+//
+//        progress.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+////                Intent i = new Intent(Home.this, .class);
+////                startActivity(i);
+//            }
+//        });
+//
+//        aboutus.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+////                Intent i = new Intent(Home.this, .class);
+////                startActivity(i);
+//            }
+//        });
 
     }
 
@@ -87,6 +136,11 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
 
         switch (item.getItemId()){
 
+            case R.id.nav_logout:
+                Intent login = new Intent(Home.this, login.class );
+                Toast.makeText(this, "Logging Out", Toast.LENGTH_SHORT).show();
+                startActivity(login);
+                break;
 
             case R.id.nav_home:
             break;
@@ -106,4 +160,6 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
 
         return true;
     }
+
+
 }

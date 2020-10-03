@@ -182,10 +182,13 @@
         app:layout_constraintTop_toBottomOf="@id/linearLayout">
 
         <androidx.cardview.widget.CardView
+
+            android:id="@+id/leaveCard"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="5dp"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:clickable="true">
 
             <RelativeLayout
                 android:layout_width="match_parent"

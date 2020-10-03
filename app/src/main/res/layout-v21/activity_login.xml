@@ -107,6 +107,7 @@
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/custom_button"
+            android:onClick="loginUser"
             android:text="@string/Lg"
             android:textColor="#3AE5E8"
             android:transitionName="login_button" />
