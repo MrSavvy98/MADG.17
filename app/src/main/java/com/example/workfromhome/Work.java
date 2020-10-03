@@ -6,7 +6,7 @@ public class Work {
     private String employeeID;
     private Date date;
     private String work;
-    private  String delay;
+    private String delay;
 
     public String getEmployeeID() {
         return employeeID;
@@ -39,4 +39,6 @@ public class Work {
     public void setDelay(String delay) {
         this.delay = delay;
     }
+
+
 }
