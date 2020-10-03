@@ -24,17 +24,17 @@ public class FindEmployee extends AppCompatActivity {
         empID = findViewById(R.id.etEmpID);
         btnNext = findViewById(R.id.btnNext);
 
-//        btnNext.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                String employeeID = empID.getText().toString().trim();
-//                Log.i(TAG, "onClick: empID "+employeeID);
-//
-//                Intent intent = new Intent(FindEmployee.this, MainActivity.class);
-//                intent.putExtra(ID,employeeID);
-//                startActivity(intent);
-//            }
-//        });
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String employeeID = empID.getText().toString().trim();
+                Log.i(TAG, "onClick: empID "+employeeID);
+
+                Intent intent = new Intent(FindEmployee.this, MainActivity.class);
+                intent.putExtra(ID,employeeID);
+                startActivity(intent);
+            }
+        });
 
     }
 }
