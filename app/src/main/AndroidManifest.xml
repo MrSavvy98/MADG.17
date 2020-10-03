@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.workfromhome">
 
     <application
@@ -16,9 +17,12 @@
         <activity android:name=".SignUp" />
         <activity android:name=".login" />
         <activity android:name=".Dashboard" />
+
         <activity android:name=".Landing">
-        <activity android:name=".WorkViewActivity"></activity>
-        <activity android:name=".MainActivity">
+
+        <activity android:name=".WorkViewActivity"
+            tools:ignore="WrongManifestParent" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
