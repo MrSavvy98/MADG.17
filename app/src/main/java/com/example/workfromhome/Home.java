@@ -40,8 +40,14 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar);
+
+        //clickable cardView
+        profile = findViewById(R.id.profileCard);
+        attendance = findViewById(R.id.attendanceCard);
         leave = findViewById(R.id.leaveCard);
         viewtasks = findViewById(R.id.taskCard);
+        progress = findViewById(R.id.progressCard);
+        aboutus = findViewById(R.id.aboutusCard);
 
         //toolbar
         setSupportActionBar(toolbar);
@@ -88,39 +94,39 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
 
 
 
-//        profile.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-////                Intent i = new Intent(Home.this, .class);
-////                startActivity(i);
-//            }
-//        });
-//
-//        attendance.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-////                Intent i = new Intent(Home.this, .class);
-////                startActivity(i);
-//            }
-//        });
-//
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                Intent i = new Intent(Home.this, .class);
+//                startActivity(i);
+            }
+        });
+
+        attendance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Home.this, Attendance.class);
+                startActivity(i);
+            }
+        });
 
 
-//        progress.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-////                Intent i = new Intent(Home.this, .class);
-////                startActivity(i);
-//            }
-//        });
-//
-//        aboutus.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-////                Intent i = new Intent(Home.this, .class);
-////                startActivity(i);
-//            }
-//        });
+
+        progress.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                Intent i = new Intent(Home.this, .class);
+//                startActivity(i);
+            }
+        });
+
+        aboutus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                Intent i = new Intent(Home.this, .class);
+//                startActivity(i);
+            }
+        });
 
     }
 
