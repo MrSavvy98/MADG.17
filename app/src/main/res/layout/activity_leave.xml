@@ -9,7 +9,7 @@
     android:orientation="vertical"
     tools:context=".Leave"
     android:fitsSystemWindows="true"
-    tools:openDrawer="">
+    tools:openDrawer="start">
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
@@ -111,9 +111,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
-                android:background="#d2e0f7"
+                android:background="@drawable/custom_button"
                 android:text="@string/apply_leave"
-                android:textColor="#000"
+                android:textColor="#3AE5E8"
                 tools:layout_editor_absoluteX="36dp"
                 tools:layout_editor_absoluteY="255dp" />
 
@@ -123,9 +123,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:background="#d2e0f7"
+                android:background="@drawable/custom_button"
                 android:text="@string/view_leave"
-                android:textColor="#000"
+                android:textColor="#3AE5E8"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="417dp" />
 
@@ -135,9 +135,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:background="#d2e0f7"
+                android:background="@drawable/custom_button"
                 android:text="@string/Edit_leave"
-                android:textColor="#000"
+                android:textColor="#3AE5E8"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="417dp" />
 
@@ -147,9 +147,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:background="#d2e0f7"
+                android:background="@drawable/custom_button"
                 android:text="@string/delete_view"
-                android:textColor="#000"
+                android:textColor="#3AE5E8"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="417dp" />
 

@@ -21,7 +21,7 @@ public class ApplyLeave extends AppCompatActivity {
 
     FirebaseDatabase rootNode;
     DatabaseReference reference;
-
+    //TextInputLayout empid,department,type,duration,f,t,reason;
 
 
     @Override
@@ -45,14 +45,22 @@ public class ApplyLeave extends AppCompatActivity {
 //                rootNode = FirebaseDatabase.getInstance();
 //                reference = rootNode.getReference("Leave");
 
+
+
                 reference = FirebaseDatabase.getInstance().getReference().child("Add_Leave");
 
                 try{
 
-                    if(TextUtils.isEmpty(emp_id.getEditText().toString())){
+                    if( validateEmpID()==false){
 
-                        Toast.makeText(getApplicationContext(), "Please Enter Employee ID", Toast.LENGTH_SHORT).show();
+
+                        return;
                     }
+//                    else if( validateDepart()==false){
+//
+//
+//                        return;
+//                    }
                     else {
 
 
@@ -88,5 +96,69 @@ public class ApplyLeave extends AppCompatActivity {
 
     }
 
+    private Boolean validateEmpID(){
 
+        String value = emp_id.getEditText().getText().toString();
+        String white = "\\A\\w{4,20}\\z";
+
+        if(value.isEmpty()){
+
+            emp_id.setError("Feild cannot be empty");
+            return false;
+        }
+        else if(value.length() >= 5){
+
+            emp_id.setError("Employee id too long, should be 5 numbers");
+            return false;
+
+        }
+
+        else if(!value.matches(white)){
+
+            emp_id.setError("White spaces are not allowed");
+            return false;
+
+        }
+        else{
+
+            emp_id.setError(null);
+            emp_id.setErrorEnabled(false);
+            return true;
+        }
+
+
+    }
+
+//    private Boolean validateDepart(){
+//
+//        String value = dept.getEditText().getText().toString();
+//        String white = "\\A\\w{4,20}\\z";
+//
+//        if(value.isEmpty()){
+//
+//            dept.setError("Feild cannot be empty");
+//            return false;
+//        }
+//        else if(value.length() >= 15){
+//
+//            dept.setError("Employee id too long, should be 5 numbers");
+//            return false;
+//
+//        }
+//
+//        else if(!value.matches(white)){
+//
+//            dept.setError("White spaces are not allowed");
+//            return false;
+//
+//        }
+//        else{
+//
+//            dept.setError(null);
+//            dept.setErrorEnabled(false);
+//            return true;
+//        }
+//
+//
+//    }
 }
