@@ -36,8 +36,10 @@
     <string name="type">Type</string>
 
     <string name="add_work_completed_heading">ADD WORK COMPLETED</string>
+    <string name="update_work">Update Work</string>
     <string name="add_work_completed_reason_for_delay">Reason for delay</string>
     <string name="add_work_completed_button">Submit</string>
+    <string name="Update">Update</string>
     <string name="work_view_header">VIEW WORK COMPLETED</string>
     <string name="work_view_updateButtom">Update</string>
     <string name="work_view_deleteButtom">Delete</string>

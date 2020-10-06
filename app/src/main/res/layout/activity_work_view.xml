@@ -37,7 +37,6 @@
 <!--            android:layout_centerInParent="true"-->
 <!--            android:scaleType="center"-->
 <!--            android:textColor="#000000"-->
-<!--            android:text="@string/my_appointments_heading"-->
 <!--            android:textSize="16dp" />-->
 
 <!--    </RelativeLayout>-->
@@ -45,7 +44,17 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/action_bar"
         android:layout_marginTop="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginLeft="5dp"/>
+
+    <Button
+        android:id="@+id/btnAddWork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:text="Add work"
+        android:background="@color/buttonBackground"/>
 </RelativeLayout>

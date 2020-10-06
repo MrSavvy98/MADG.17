@@ -12,7 +12,8 @@ import android.widget.EditText;
 public class FindEmployee extends AppCompatActivity {
 
     private static final String TAG = "FindEmployee";
-    public static final String ID = "";
+    public static final String ID = "employeeID";
+    public static final String POSITION = "position";
 
     EditText empID;
     Button btnNext;
@@ -30,7 +31,7 @@ public class FindEmployee extends AppCompatActivity {
                 String employeeID = empID.getText().toString().trim();
                 Log.i(TAG, "onClick: empID "+employeeID);
 
-                Intent intent = new Intent(FindEmployee.this, MainActivity.class);
+                Intent intent = new Intent(FindEmployee.this, WorkViewActivity.class);
                 intent.putExtra(ID,employeeID);
                 startActivity(intent);
             }

@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="50dp"
         android:layout_alignParentBottom="true"
+        android:background="@color/buttonBackground"
         android:text="Next"/>
 
 

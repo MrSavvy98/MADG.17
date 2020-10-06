@@ -1,41 +1,123 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="13dp"
+    app:cardElevation="5dp">
+
 <LinearLayout android:id="@+id/frm_category"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
     android:orientation="horizontal"
-    android:weightSum="4"
+    android:weightSum="5"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-      <TextView
-          android:id="@+id/task"
-          android:layout_width="0dp"
-          android:layout_height="match_parent"
-          android:padding="15dp"
-          android:text="Task"
-          android:gravity="center"
-          android:layout_weight="1" />
-      <TextView
-          android:id="@+id/delay"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:padding="15dp"
-          android:text="Delay"
-          android:gravity="center"
-          android:layout_weight="1"/>
-      <TextView
-          android:id="@+id/work"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:padding="15dp"
-          android:text="Task"
-          android:gravity="center"
-          android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <TextView
+                android:padding="15dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Date"/>
+
+            <TextView
+                android:id="@+id/task"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:text="Task"
+                android:layout_weight="3"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <TextView
+                android:padding="15dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Reason for delay"/>
+
+            <TextView
+                android:id="@+id/delay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="Delay"
+                android:layout_weight="3"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <TextView
+                android:padding="15dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Works"/>
+
+            <TextView
+                android:id="@+id/work"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:padding="15dp"
+                android:text="Task"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:layout_weight="1">
     <ImageButton
         android:id="@+id/btnDelete"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
         android:layout_height="wrap_content"
         android:src="@android:drawable/ic_delete"
         android:layout_weight="1"/>
 
+    <ImageButton
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_edit"
+        android:layout_weight="1"/>
+</LinearLayout>
+
+
+
   </LinearLayout>
+</androidx.cardview.widget.CardView>

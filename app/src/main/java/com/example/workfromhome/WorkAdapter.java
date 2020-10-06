@@ -54,7 +54,7 @@ public class WorkAdapter extends RecyclerView.Adapter<WorkAdapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView date, work, delay;
-        ImageButton btnDelete;
+        ImageButton btnDelete, btnEdit;
 
         ViewHolder(View itemView) {
             super(itemView);
@@ -63,6 +63,16 @@ public class WorkAdapter extends RecyclerView.Adapter<WorkAdapter.ViewHolder> {
             work = itemView.findViewById(R.id.work);
             delay = itemView.findViewById(R.id.delay);
             btnDelete = itemView.findViewById(R.id.btnDelete);
+            btnEdit = itemView.findViewById(R.id.btnEdit);
+            btnEdit.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int position = getAdapterPosition();
+                    if(mItemClickListener != null && position >= 0) {
+                        mItemClickListener.onItemEdited(position);
+                    }
+                }
+            });
             btnDelete.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -81,5 +91,6 @@ public class WorkAdapter extends RecyclerView.Adapter<WorkAdapter.ViewHolder> {
 
     public interface OnItemClickListener {
         void onItemDeleted(int position);
+        void onItemEdited(int position);
     }
 }

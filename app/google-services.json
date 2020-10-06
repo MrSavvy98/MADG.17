@@ -1,50 +1,34 @@
 {
   "project_info": {
-    "project_number": "760131943496",
-    "firebase_url": "https://work-from-home-142b6.firebaseio.com",
-    "project_id": "work-from-home-142b6",
-    "storage_bucket": "work-from-home-142b6.appspot.com"
-    "project_number": "979711746853",
-    "firebase_url": "https://work-from-home-d69f3.firebaseio.com",
-    "project_id": "work-from-home-d69f3",
-    "storage_bucket": "work-from-home-d69f3.appspot.com"
+    "project_number": "511130729950",
+    "firebase_url": "https://whms-57442.firebaseio.com",
+    "project_id": "whms-57442",
+    "storage_bucket": "whms-57442.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:979711746853:android:9a7190dd74eddefd1e70cc",
-        "mobilesdk_app_id": "1:760131943496:android:4317029ac2a3b2abbcec7d",
+        "mobilesdk_app_id": "1:511130729950:android:d8c4420c825de28f32f14f",
         "android_client_info": {
           "package_name": "com.example.workfromhome"
         }
       },
       "oauth_client": [
         {
-          "client_id": "979711746853-h51v3j1q83af8fe349j9022pcrf0elaj.apps.googleusercontent.com",
-          "client_id": "760131943496-j0q9g4eicqsfmjhks3sfurmhi6n5bulj.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.workfromhome",
-            "certificate_hash": "48891199fc8aa9bbcee40f2843149e1537063c23"
-          }
-        },
-        {
-          "client_id": "760131943496-gopj2dop614mnou9j2bjdl5m5m2mun5q.apps.googleusercontent.com",
+          "client_id": "511130729950-0lgg75tme4rk50an4fr1hh04dulujdtf.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAosBPt2I-VNJ_2iOUTjL0Dtf3DjmWpwyw"
-          "current_key": "AIzaSyBI6PllikKnVBevNOjogy6baAU-BGOFmKA"
+          "current_key": "AIzaSyDiSGo0p-bMch9AoXhjerRoIJ15HIEUREQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "979711746853-h51v3j1q83af8fe349j9022pcrf0elaj.apps.googleusercontent.com",
-              "client_id": "760131943496-gopj2dop614mnou9j2bjdl5m5m2mun5q.apps.googleusercontent.com",
+              "client_id": "511130729950-0lgg75tme4rk50an4fr1hh04dulujdtf.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
