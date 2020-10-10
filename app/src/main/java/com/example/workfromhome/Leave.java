@@ -102,7 +102,7 @@ public class Leave extends AppCompatActivity implements NavigationView.OnNavigat
                 break;
 
             case R.id.nav_attendance:
-                Intent att = new Intent(Leave.this, Attendance.class );
+                Intent att = new Intent(Leave.this, AttendanceM.class );
                 startActivity(att);
                 break;
 

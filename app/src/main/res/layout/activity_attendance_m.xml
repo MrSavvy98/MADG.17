@@ -30,10 +30,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <EditText
         android:id="@+id/intime"
         android:layout_width="99dp"
         android:layout_height="47dp"
+        android:hint="In time"
+        android:inputType="time"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.256"
@@ -41,15 +43,27 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.825" />
 
-    <TextView
+    <EditText
         android:id="@+id/Outtime"
         android:layout_width="99dp"
         android:layout_height="47dp"
+        android:hint="Out time"
+        android:inputType="time"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.753"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.823" />
+
+    <TextView
+        android:layout_width="139dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView"
+        app:layout_constraintVertical_bias="0.879" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
