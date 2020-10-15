@@ -108,7 +108,7 @@ public class ApplyLeave extends AppCompatActivity {
         }
         else if(value.length() >= 5){
 
-            emp_id.setError("Employee id too long, should be 5 numbers");
+            emp_id.setError("Employee id too long, should be 4 numbers");
             return false;
 
         }
