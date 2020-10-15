@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.FocusFinder;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DataSnapshot;
@@ -49,6 +50,7 @@ public class login extends AppCompatActivity {
 
 
                 Intent intent1 = new Intent(login.this, Home.class);
+                Toast.makeText(getApplicationContext(), "Logging", Toast.LENGTH_SHORT).show();
                 startActivity(intent1);
 
 

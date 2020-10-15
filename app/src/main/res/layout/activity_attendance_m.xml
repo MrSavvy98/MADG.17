@@ -38,10 +38,10 @@
         android:inputType="time"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.825" />
+        app:layout_constraintVertical_bias="0.821" />
 
     <EditText
         android:id="@+id/Outtime"
@@ -49,21 +49,32 @@
         android:layout_height="47dp"
         android:hint="Out time"
         android:inputType="time"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/intime"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.753"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.823" />
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
+        android:id="@+id/result"
         android:layout_width="139dp"
         android:layout_height="57dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calendarView"
-        app:layout_constraintVertical_bias="0.879" />
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/time"
+        android:layout_width="81dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_button"
+        android:textColor="#3AE5E8"
+        android:text="Add"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Outtime"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
