@@ -51,7 +51,7 @@ public class ApplyLeave extends AppCompatActivity {
 
                 try{
 
-                    if( validateEmpID()==false){
+                    if((validateEmpID()==false) && (validateDepart()==false)){
 
 
                         return;
@@ -99,7 +99,7 @@ public class ApplyLeave extends AppCompatActivity {
     private Boolean validateEmpID(){
 
         String value = emp_id.getEditText().getText().toString();
-        String white = "\\A\\w{4,20}\\z";
+
 
         if(value.isEmpty()){
 
@@ -109,13 +109,6 @@ public class ApplyLeave extends AppCompatActivity {
         else if(value.length() >= 5){
 
             emp_id.setError("Employee id too long, should be 4 numbers");
-            return false;
-
-        }
-
-        else if(!value.matches(white)){
-
-            emp_id.setError("White spaces are not allowed");
             return false;
 
         }
@@ -129,36 +122,30 @@ public class ApplyLeave extends AppCompatActivity {
 
     }
 
-//    private Boolean validateDepart(){
-//
-//        String value = dept.getEditText().getText().toString();
-//        String white = "\\A\\w{4,20}\\z";
-//
-//        if(value.isEmpty()){
-//
-//            dept.setError("Feild cannot be empty");
-//            return false;
-//        }
-//        else if(value.length() >= 15){
-//
-//            dept.setError("Employee id too long, should be 5 numbers");
-//            return false;
-//
-//        }
-//
-//        else if(!value.matches(white)){
-//
-//            dept.setError("White spaces are not allowed");
-//            return false;
-//
-//        }
-//        else{
-//
-//            dept.setError(null);
-//            dept.setErrorEnabled(false);
-//            return true;
-//        }
-//
-//
-//    }
+    private Boolean validateDepart(){
+
+        String value = dept.getEditText().getText().toString();
+
+
+        if(value.isEmpty()){
+
+            dept.setError("Feild cannot be empty");
+            return false;
+        }
+        else if(value.length() >= 15){
+
+            dept.setError("Employee id too long, should be 14 numbers");
+            return false;
+
+        }
+
+        else{
+
+            dept.setError(null);
+            dept.setErrorEnabled(false);
+            return true;
+        }
+
+
+    }
 }
