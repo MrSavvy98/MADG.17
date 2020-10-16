@@ -15,13 +15,14 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class ApplyLeave extends AppCompatActivity {
 
+    //variable declaration
     TextInputLayout emp_id, dept, lType, lDuration, from, to, rsn;
     Button btn_next;
     public static String eid;
 
     FirebaseDatabase rootNode;
     DatabaseReference reference;
-    //TextInputLayout empid,department,type,duration,f,t,reason;
+
 
 
     @Override
