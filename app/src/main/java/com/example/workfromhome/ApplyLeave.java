@@ -121,7 +121,7 @@ public class ApplyLeave extends AppCompatActivity {
             return false;
         } else if (value.length() >= 15) {
 
-            dept.setError("Employee id too long, should be 14 numbers");
+            dept.setError("Department name too long, should be 14 numbers");
             return false;
 
         } else {
