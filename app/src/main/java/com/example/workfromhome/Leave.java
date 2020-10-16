@@ -75,8 +75,6 @@ public class Leave extends AppCompatActivity implements NavigationView.OnNavigat
         });
 
 
-
-
     }
 
 
@@ -88,26 +86,26 @@ public class Leave extends AppCompatActivity implements NavigationView.OnNavigat
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
 
             case R.id.nav_logout:
-                Intent login = new Intent(Leave.this, login.class );
+                Intent login = new Intent(Leave.this, login.class);
                 Toast.makeText(this, "Logging Out", Toast.LENGTH_SHORT).show();
                 startActivity(login);
                 break;
 
             case R.id.nav_viewTasks:
-                Intent task = new Intent(Leave.this, MainActivity.class );
+                Intent task = new Intent(Leave.this, MainActivity.class);
                 startActivity(task);
                 break;
 
             case R.id.nav_attendance:
-                Intent att = new Intent(Leave.this, AttendanceM.class );
+                Intent att = new Intent(Leave.this, AttendanceM.class);
                 startActivity(att);
                 break;
 
             case R.id.nav_home:
-                Intent intent = new Intent(Leave.this, Home.class );
+                Intent intent = new Intent(Leave.this, Home.class);
                 startActivity(intent);
                 break;
 
@@ -115,7 +113,7 @@ public class Leave extends AppCompatActivity implements NavigationView.OnNavigat
 
                 break;
 
-            case  R.id.nav_share:
+            case R.id.nav_share:
                 Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
                 break;
 

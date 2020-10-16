@@ -2,7 +2,7 @@ package com.example.workfromhome;
 
 public class AddLeaveHelper {
 
-        String id, depart, leaveType, duration, frm, to, reason;
+    String id, depart, leaveType, duration, frm, to, reason;
 
     public AddLeaveHelper() {
     }

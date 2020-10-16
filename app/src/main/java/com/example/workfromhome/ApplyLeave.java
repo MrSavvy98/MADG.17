@@ -42,26 +42,16 @@ public class ApplyLeave extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-//                rootNode = FirebaseDatabase.getInstance();
-//                reference = rootNode.getReference("Leave");
-
-
 
                 reference = FirebaseDatabase.getInstance().getReference().child("Add_Leave");
 
-                try{
+                try {
 
-                    if((validateEmpID()==false) && (validateDepart()==false)){
+                    if ((validateEmpID() == false) && (validateDepart() == false)) {
 
 
                         return;
-                    }
-//                    else if( validateDepart()==false){
-//
-//
-//                        return;
-//                    }
-                    else {
+                    } else {
 
 
                         //get all the values
@@ -84,8 +74,7 @@ public class ApplyLeave extends AppCompatActivity {
                         next.putExtra(eid, id);
                         startActivity(next);
                     }
-                }
-                catch (NumberFormatException e){
+                } catch (NumberFormatException e) {
 
                     Toast.makeText(getApplicationContext(), "Invalid", Toast.LENGTH_SHORT).show();
 
@@ -96,23 +85,21 @@ public class ApplyLeave extends AppCompatActivity {
 
     }
 
-    private Boolean validateEmpID(){
+    private Boolean validateEmpID() {
 
         String value = emp_id.getEditText().getText().toString();
 
 
-        if(value.isEmpty()){
+        if (value.isEmpty()) {
 
-            emp_id.setError("Feild cannot be empty");
+            emp_id.setError("Field cannot be empty");
             return false;
-        }
-        else if(value.length() >= 5){
+        } else if (value.length() >= 5) {
 
             emp_id.setError("Employee id too long, should be 4 numbers");
             return false;
 
-        }
-        else{
+        } else {
 
             emp_id.setError(null);
             emp_id.setErrorEnabled(false);
@@ -122,24 +109,21 @@ public class ApplyLeave extends AppCompatActivity {
 
     }
 
-    private Boolean validateDepart(){
+    private Boolean validateDepart() {
 
         String value = dept.getEditText().getText().toString();
 
 
-        if(value.isEmpty()){
+        if (value.isEmpty()) {
 
             dept.setError("Feild cannot be empty");
             return false;
-        }
-        else if(value.length() >= 15){
+        } else if (value.length() >= 15) {
 
             dept.setError("Employee id too long, should be 14 numbers");
             return false;
 
-        }
-
-        else{
+        } else {
 
             dept.setError(null);
             dept.setErrorEnabled(false);

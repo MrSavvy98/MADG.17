@@ -24,7 +24,6 @@ public class login extends AppCompatActivity {
     TextInputLayout username, password;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +32,7 @@ public class login extends AppCompatActivity {
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
 
-        Button b1 =(Button) findViewById(R.id.btn_signUp);
+        Button b1 = (Button) findViewById(R.id.btn_signUp);
         Button b2 = (Button) findViewById(R.id.btn_login);
 
         b1.setOnClickListener(new View.OnClickListener() {
@@ -60,22 +59,20 @@ public class login extends AppCompatActivity {
 
     }
 
-    private boolean validateUsername(){
+    private boolean validateUsername() {
 
         String value = username.getEditText().getText().toString();
         String whitespace = "\\A\\w{4,20}\\Z";
 
-        if(value.isEmpty()) {
+        if (value.isEmpty()) {
 
             username.setError("Field cannot be empty");
             return false;
-        }
-        else if(value.matches(whitespace)){
+        } else if (value.matches(whitespace)) {
 
             username.setError("Do not use whitespaces");
             return false;
-        }
-        else{
+        } else {
 
             username.setError(null);
             username.setErrorEnabled(false);
@@ -83,16 +80,15 @@ public class login extends AppCompatActivity {
         }
     }
 
-    private boolean validatePassword(){
+    private boolean validatePassword() {
 
         String value = password.getEditText().getText().toString();
 
-        if(value.isEmpty()) {
+        if (value.isEmpty()) {
 
             password.setError("Field cannot be empty");
             return false;
-        }
-        else{
+        } else {
 
             password.setError(null);
             password.setErrorEnabled(false);
@@ -102,20 +98,18 @@ public class login extends AppCompatActivity {
     }
 
 
+    public void loginUser(View view) {
 
-    public void loginUser(View view){
-
-        if(!validateUsername() | !validatePassword()){
+        if (!validateUsername() | !validatePassword()) {
 
             return;
-        }
-        else{
+        } else {
 
             isUser();
         }
     }
 
-    public void isUser(){
+    public void isUser() {
 
         final String enUsername = username.getEditText().getText().toString().trim();
         final String enPassword = password.getEditText().getText().toString().trim();
@@ -127,27 +121,25 @@ public class login extends AppCompatActivity {
         checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(snapshot.exists()){
+                if (snapshot.exists()) {
 
                     username.setError(null);
                     username.setErrorEnabled(false);
 
                     String getPass = snapshot.child(enUsername).child("password").getValue(String.class);
 
-                    if (getPass.equals(enPassword)){
+                    if (getPass.equals(enPassword)) {
 
                         username.setError(null);
                         username.setErrorEnabled(false);
 
                         Intent intent = new Intent(login.this, Home.class);
                         startActivity(intent);
-                    }
-                    else{
+                    } else {
                         password.setError("Wrong Password");
                         password.requestFocus();
                     }
-                }
-                else{
+                } else {
 
                     username.setError("Wrong Username");
                     username.requestFocus();

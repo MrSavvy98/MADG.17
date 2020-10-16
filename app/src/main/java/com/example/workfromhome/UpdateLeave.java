@@ -20,7 +20,7 @@ public class UpdateLeave extends AppCompatActivity {
 
     String upId;
     TextInputLayout emp_id, dept, lType, lDuration, from, to, reason;
-    Button btnUpdate,rmv;
+    Button btnUpdate, rmv;
     AddLeaveHelper updateLeave;
 
     @Override
@@ -28,7 +28,7 @@ public class UpdateLeave extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_updateleave);
 
-        Intent intent =  getIntent();
+        Intent intent = getIntent();
         upId = intent.getStringExtra(ApplyLeave.eid);
 
         final DatabaseReference read = FirebaseDatabase.getInstance().getReference().child("Add_Leave").child(upId);
@@ -48,7 +48,7 @@ public class UpdateLeave extends AppCompatActivity {
         read.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(snapshot.hasChildren()){
+                if (snapshot.hasChildren()) {
 
                     updateLeave.setId(snapshot.child("id").getValue().toString());
                     updateLeave.setDepart(snapshot.child("depart").getValue().toString());
@@ -82,7 +82,7 @@ public class UpdateLeave extends AppCompatActivity {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
 
-                        if(snapshot.hasChildren()){
+                        if (snapshot.hasChildren()) {
 
                             updateLeave.setId(emp_id.getEditText().getText().toString().trim());
                             updateLeave.setDepart(dept.getEditText().getText().toString().trim());
@@ -93,7 +93,7 @@ public class UpdateLeave extends AppCompatActivity {
                             updateLeave.setReason(reason.getEditText().getText().toString().trim());
 
                             read.setValue(updateLeave);
-                            Toast.makeText(getApplicationContext(),"Updated",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "Updated", Toast.LENGTH_SHORT).show();
                         }
                     }
 
@@ -106,18 +106,16 @@ public class UpdateLeave extends AppCompatActivity {
         });
 
 
+        rmv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-
-      rmv.setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View view) {
-
-              read.removeValue();
-              Toast.makeText(getApplicationContext(),"Removing",Toast.LENGTH_SHORT).show();
-              Intent ii = new Intent(UpdateLeave.this, Leave.class);
-              startActivity(ii);
-          }
-      });
+                read.removeValue();
+                Toast.makeText(getApplicationContext(), "Removing", Toast.LENGTH_SHORT).show();
+                Intent ii = new Intent(UpdateLeave.this, Leave.class);
+                startActivity(ii);
+            }
+        });
 
 
     }

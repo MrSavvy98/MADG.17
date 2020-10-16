@@ -27,7 +27,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
-    CardView leave,profile,attendance,viewtasks,progress,aboutus;
+    CardView leave, profile, attendance, viewtasks, progress, aboutus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,7 +93,6 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         });
 
 
-
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -109,7 +108,6 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
                 startActivity(i);
             }
         });
-
 
 
         progress.setOnClickListener(new View.OnClickListener() {
@@ -132,11 +130,10 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
 
     @Override
     public void onBackPressed() {
-        if(drawerLayout.isDrawerOpen(GravityCompat.START)){
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
 
             drawerLayout.closeDrawer(GravityCompat.START);
-        }
-        else{
+        } else {
 
             super.onBackPressed();
         }
@@ -145,28 +142,28 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
 
             case R.id.nav_logout:
-                Intent login = new Intent(Home.this, login.class );
+                Intent login = new Intent(Home.this, login.class);
                 Toast.makeText(this, "Logging Out", Toast.LENGTH_SHORT).show();
                 startActivity(login);
                 break;
 
             case R.id.nav_viewTasks:
-                Intent task = new Intent(Home.this, MainActivity.class );
+                Intent task = new Intent(Home.this, MainActivity.class);
                 startActivity(task);
                 break;
 
             case R.id.nav_home:
-            break;
+                break;
 
             case R.id.nav_leave:
-                Intent intent = new Intent(Home.this, Leave.class );
+                Intent intent = new Intent(Home.this, Leave.class);
                 startActivity(intent);
                 break;
 
-            case  R.id.nav_share:
+            case R.id.nav_share:
                 Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
                 break;
 

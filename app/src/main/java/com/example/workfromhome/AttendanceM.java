@@ -19,11 +19,10 @@ import java.util.Date;
 
 public class AttendanceM extends AppCompatActivity {
 
-    EditText in,out;
+    EditText in, out;
     TextView result;
     Button b1;
     DatabaseReference ref;
-
 
 
     @Override
@@ -44,8 +43,6 @@ public class AttendanceM extends AppCompatActivity {
                 String time2 = out.getText().toString();
 
 
-
-
                 ref = FirebaseDatabase.getInstance().getReference().child("Attendance");
 
                 SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
@@ -59,35 +56,22 @@ public class AttendanceM extends AppCompatActivity {
                     d2 = simpleDateFormat.parse(time2);
 
                     long dif = d2.getTime() - d1.getTime();
-                    long difHrs = dif / (3600 * 1000) ;
+                    long difHrs = dif / (3600 * 1000);
                     long min = dif % (3600 * 1000);
                     long difMin = min / (60 * 1000);
 
                     //String hrs = Long.toString(difHrs);
-                    result.setText("Hours:"+Long.toString(difHrs) + "  " + "Minutes:" + Long.toString(difMin));
+                    result.setText("Hours:" + Long.toString(difHrs) + "  " + "Minutes:" + Long.toString(difMin));
 
 
-                }
-                catch (ParseException e){
+                } catch (ParseException e) {
 
                     e.printStackTrace();
                 }
 
 
-//                long difSec = dif / 1000;
-//
-//                long min = difSec % 3600;
-//                long difMin = min / 60;
-//
-//
-
-
             }
         });
-
-
-
-
 
 
     }
