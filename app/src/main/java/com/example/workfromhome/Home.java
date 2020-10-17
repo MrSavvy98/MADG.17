@@ -87,7 +87,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         viewtasks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Home.this, MainActivity.class);
+                Intent i = new Intent(Home.this, taskTypeActivity.class);
                 startActivity(i);
             }
         });
