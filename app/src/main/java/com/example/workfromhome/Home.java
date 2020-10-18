@@ -94,8 +94,8 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent i = new Intent(Home.this, .class);
-//                startActivity(i);
+                Intent i = new Intent(Home.this, HomeActivity.class);
+                startActivity(i);
             }
         });
 

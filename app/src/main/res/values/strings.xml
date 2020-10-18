@@ -61,4 +61,17 @@
     <string name="eid">Employee ID</string>
     <string name="assign">Assign</string>
     <string name="taskType">Task Assigning</string>
+
+
+    <string name="Employees">Employees</string>
+    <string name="ID">Employee_ID</string>
+    <string name="E_Name">Employee Name</string>
+    <string name="DOB">Date of Birth</string>
+    <string name="Add">Address</string>
+    <string name="Email">Email</string>
+    <string name="P_num">Phone Number</string>
+    <string name="D_Name">Department Name</string>
+    <string name="B_Sal">Basic Salary</string>
+    <string name="P_In">Pay Incentives</string>
+    <string name="W_Ho">Working Hours</string>
 </resources>

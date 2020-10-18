@@ -29,6 +29,10 @@
         <activity android:name=".SignUp" />
         <activity android:name=".login" />
         <activity android:name=".Dashboard" />
+        <activity android:name=".EmployeeActivity" />
+        <activity android:name=".EmployeeRegistrationActivity" />
+        <activity android:name=".HomeActivity"/>
+
         <activity android:name=".Landing">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
