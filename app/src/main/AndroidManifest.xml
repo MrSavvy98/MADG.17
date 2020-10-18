@@ -12,13 +12,16 @@
         android:theme="@style/AppTheme">
         <activity android:name=".taskTypeActivity"></activity>
         <activity android:name=".viewAssigned1" />
+        <activity android:name=".FindEmployee" />
         <activity android:name=".update" />
         <activity android:name=".tasks" />
         <activity android:name=".confirm_update" />
         <activity android:name=".assign_task" />
         <activity android:name=".add_task" />
         <activity android:name=".AttendanceM" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".WorkCompleteFormActivity" />
+        <activity android:name=".WorkViewActivity" />
+        <activity android:name=".EditActivity" />
         <activity android:name=".UpdateLeave" />
         <activity android:name=".ApplyLeave" />
         <activity android:name=".Leave" />

@@ -95,7 +95,7 @@ public class Leave extends AppCompatActivity implements NavigationView.OnNavigat
                 break;
 
             case R.id.nav_viewTasks:
-                Intent task = new Intent(Leave.this, MainActivity.class);
+                Intent task = new Intent(Leave.this, WorkCompleteFormActivity.class);
                 startActivity(task);
                 break;
 
