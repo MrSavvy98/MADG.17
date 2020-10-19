@@ -43,4 +43,35 @@
     <string name="work_view_header">VIEW WORK COMPLETED</string>
     <string name="work_view_updateButtom">Update</string>
     <string name="work_view_deleteButtom">Delete</string>
+
+    <string name="stayhomestaysafe">Stay Home. Stay Safe.</string>
+    <string name="signout">Sign Out</string>
+    <string name="hi">Hello!</string>
+    <string name="tr">Having trouble?</string>
+    <string name="con">Contact us on 02033182226</string>
+    <string name="b1">Employee Details</string>
+    <string name="b2">Attendance</string>
+    <string name="b3">Assign Tasks</string>
+    <string name="b4">Progress Reports</string>
+    <string name="b5">View Profile</string>
+    <string name="taskassign">Assign Tasks</string>
+    <string name="b6">View assigned tasks</string>
+    <string name="b7">Add new task</string>
+    <string name="addTask">Add New Task</string>
+    <string name="eid">Employee ID</string>
+    <string name="assign">Assign</string>
+    <string name="taskType">Task Assigning</string>
+
+
+    <string name="Employees">Employees</string>
+    <string name="ID">Employee_ID</string>
+    <string name="E_Name">Employee Name</string>
+    <string name="DOB">Date of Birth</string>
+    <string name="Add">Address</string>
+    <string name="Email">Email</string>
+    <string name="P_num">Phone Number</string>
+    <string name="D_Name">Department Name</string>
+    <string name="B_Sal">Basic Salary</string>
+    <string name="P_In">Pay Incentives</string>
+    <string name="W_Ho">Working Hours</string>
 </resources>

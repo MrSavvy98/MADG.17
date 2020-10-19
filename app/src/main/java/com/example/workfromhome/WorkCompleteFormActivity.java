@@ -25,7 +25,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class WorkCompleteFormActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
     public static final String ID = "";
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         btnSubmit = findViewById(R.id.submit);
 
         work = new Work();
-      // final List<Work> works = new ArrayList<>();
+        // final List<Work> works = new ArrayList<>();
 
         dbRef = FirebaseDatabase.getInstance().getReference().child("Add_Task").child(employeeID);
         dbRef.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -78,9 +78,9 @@ public class MainActivity extends AppCompatActivity {
                     employee = dataSnapshot.getValue(Employee.class);
 
                     Log.i(TAG, "onDataChange: Employee hasChildren");
-                           if(employee != null){
-                                btnSubmit.setEnabled(true);
-                           }
+                    if(employee != null){
+                        btnSubmit.setEnabled(true);
+                    }
                 }
             }
 
@@ -102,22 +102,22 @@ public class MainActivity extends AppCompatActivity {
 //                if(TextUtils.isEmpty(edEmpID.getText().toString())){
 //                    Toast.makeText(getApplicationContext(),"Please enter ID",Toast.LENGTH_SHORT).show();
 //                }
-               if(TextUtils.isEmpty(edWork.getText().toString())){
+                if(TextUtils.isEmpty(edWork.getText().toString())){
                     Toast.makeText(getApplicationContext(),"Please enter work",Toast.LENGTH_SHORT).show();
                 }
                 else if(TextUtils.isEmpty(edDelay.getText().toString())){
                     Toast.makeText(getApplicationContext(),"Please enter reason for delay",Toast.LENGTH_SHORT).show();
                 }
                 else{
-                   // Work work = new Work();
-                  //  work.setEmployeeID(edEmpID.getText().toString().trim());
+                    // Work work = new Work();
+                    //  work.setEmployeeID(edEmpID.getText().toString().trim());
                     work.setWork(edWork.getText().toString().trim());
                     work.setDelay(edDelay.getText().toString().trim());
                     work.setDate(selectedDate);
 
-                       employee.getWorks().add(work);
-                //    works.add(work);
-               //     employee.setWorks(works);
+                    employee.getWorks().add(work);
+                    //    works.add(work);
+                    //     employee.setWorks(works);
 
                     //insert in to database
                     dbRef.setValue(employee);
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
 //                    Intent intent = new Intent(MainActivity.this, WorkViewActivity.class);
 //                    intent.putExtra(ID,employeeID);
 //                    startActivity(intent);
-                   finish();
+                    finish();
 
                 }
             }

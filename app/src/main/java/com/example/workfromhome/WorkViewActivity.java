@@ -42,7 +42,7 @@ public class WorkViewActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         employeeID = intent.getStringExtra(FindEmployee.ID);
-        employeeID = "19111";
+        //employeeID = " ";
         Log.i(TAG, "onCreate: employeeID = "+employeeID);
         workAdapter = new WorkAdapter(this);
         workAdapter.setOnItemClickListener(new WorkAdapter.OnItemClickListener() {
@@ -75,7 +75,7 @@ public class WorkViewActivity extends AppCompatActivity {
         btnAddWork.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(WorkViewActivity.this, MainActivity.class);
+                Intent intent = new Intent(WorkViewActivity.this, WorkCompleteFormActivity.class);
                 intent.putExtra(FindEmployee.ID, employeeID);
                 startActivity(intent);
             }
@@ -88,6 +88,7 @@ public class WorkViewActivity extends AppCompatActivity {
         super.onResume();
         if(employeeID != null) {
             Log.i(TAG, "onResume: employeeID = "+employeeID);
+            txtTitle.setText(employeeID);
             readRef = FirebaseDatabase.getInstance().getReference().child("Add_Task").child(employeeID);
             readRef.addValueEventListener(new ValueEventListener() {
 
@@ -96,7 +97,7 @@ public class WorkViewActivity extends AppCompatActivity {
                     Log.i(TAG, "onDataChange: ");
                     employee = dataSnapshot.getValue(Employee.class);
                     Log.i(TAG, "onDataChange: ");
-        //            txtTitle.setText(employee.getEid());
+                    //            txtTitle.setText(employee.getEid());
                     if (employee != null) {
                         works.clear();
                         works.addAll(employee.getWorks());

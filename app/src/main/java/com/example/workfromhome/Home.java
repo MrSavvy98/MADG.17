@@ -12,8 +12,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.Switch;
 import android.widget.Toast;
 
 import androidx.appcompat.widget.Toolbar;
@@ -87,7 +85,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         viewtasks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Home.this, MainActivity.class);
+                Intent i = new Intent(Home.this, taskTypeActivity.class);
                 startActivity(i);
             }
         });
@@ -96,8 +94,8 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent i = new Intent(Home.this, .class);
-//                startActivity(i);
+                Intent i = new Intent(Home.this, HomeActivity.class);
+                startActivity(i);
             }
         });
 
@@ -151,7 +149,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
                 break;
 
             case R.id.nav_viewTasks:
-                Intent task = new Intent(Home.this, MainActivity.class);
+                Intent task = new Intent(Home.this, WorkCompleteFormActivity.class);
                 startActivity(task);
                 break;
 
