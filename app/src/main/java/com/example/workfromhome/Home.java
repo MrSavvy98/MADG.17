@@ -149,7 +149,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
                 break;
 
             case R.id.nav_viewTasks:
-                Intent task = new Intent(Home.this, WorkCompleteFormActivity.class);
+                Intent task = new Intent(Home.this, taskTypeActivity.class);
                 startActivity(task);
                 break;
 
