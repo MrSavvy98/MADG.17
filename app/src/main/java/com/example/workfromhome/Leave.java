@@ -43,7 +43,7 @@ public class Leave extends AppCompatActivity implements NavigationView.OnNavigat
         //toolbar
         setSupportActionBar(toolbar);
 
-        //navigation Drawer menu
+
 
         //Hide or show items
 

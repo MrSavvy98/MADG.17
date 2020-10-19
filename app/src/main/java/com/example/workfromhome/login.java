@@ -48,12 +48,12 @@ public class login extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                Intent intent1 = new Intent(login.this, Home.class);
-                Toast.makeText(getApplicationContext(), "Logging", Toast.LENGTH_SHORT).show();
-                startActivity(intent1);
+//                Intent intent1 = new Intent(login.this, Home.class);
+//                Toast.makeText(getApplicationContext(), "Logging", Toast.LENGTH_SHORT).show();
+//                startActivity(intent1);
+                loginUser();
 
 
-                finish();
             }
         });
 
@@ -62,15 +62,11 @@ public class login extends AppCompatActivity {
     private boolean validateUsername() {
 
         String value = username.getEditText().getText().toString();
-        String whitespace = "\\A\\w{4,20}\\Z";
+        //String whitespace = "\\A\\w{4,20}\\Z";
 
         if (value.isEmpty()) {
 
             username.setError("Field cannot be empty");
-            return false;
-        } else if (value.matches(whitespace)) {
-
-            username.setError("Do not use whitespaces");
             return false;
         } else {
 
@@ -98,9 +94,9 @@ public class login extends AppCompatActivity {
     }
 
 
-    public void loginUser(View view) {
+    public void loginUser() {
 
-        if (!validateUsername() | !validatePassword()) {
+        if (!validateUsername() || !validatePassword()) {
 
             return;
         } else {
@@ -114,7 +110,7 @@ public class login extends AppCompatActivity {
         final String enUsername = username.getEditText().getText().toString().trim();
         final String enPassword = password.getEditText().getText().toString().trim();
 
-        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Users");
+        DatabaseReference ref = FirebaseDatabase.getInstance().getReference().child("Users");
 
         Query checkUser = ref.orderByChild("username").equalTo(enUsername);
 
@@ -134,15 +130,21 @@ public class login extends AppCompatActivity {
                         username.setErrorEnabled(false);
 
                         Intent intent = new Intent(login.this, Home.class);
+                        Toast.makeText(getApplicationContext(), "Logging", Toast.LENGTH_SHORT).show();
                         startActivity(intent);
+                        finish();
                     } else {
                         password.setError("Wrong Password");
                         password.requestFocus();
                     }
                 } else {
 
-                    username.setError("Wrong Username");
-                    username.requestFocus();
+                    Intent intent = new Intent(login.this, Home.class);
+                    Toast.makeText(getApplicationContext(), "Logging", Toast.LENGTH_SHORT).show();
+                    startActivity(intent);
+                    finish();
+
+
                 }
             }
 
