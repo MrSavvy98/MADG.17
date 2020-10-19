@@ -38,6 +38,9 @@ dependencies {
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
     implementation 'joda-time:joda-time:2.10.6'
     implementation 'com.android.support.test:rules:1.0.2'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2',{
+        exclude group:'com.android.support', module:'support-annotation'
+    })
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
