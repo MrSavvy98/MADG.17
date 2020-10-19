@@ -13,11 +13,11 @@
         <activity android:name=".taskTypeActivity"></activity>
         <activity android:name=".viewAssigned1" />
         <activity android:name=".FindEmployee" />
-        <activity android:name=".update" />
-        <activity android:name=".tasks" />
-        <activity android:name=".confirm_update" />
-        <activity android:name=".assign_task" />
-        <activity android:name=".add_task" />
+        <activity android:name=".UpdateTaskActivity" />
+        <activity android:name=".TasksActivity" />
+        <activity android:name=".ConfirmUpdateActivity" />
+        <activity android:name=".AssignTaskActivity" />
+        <activity android:name=".AddTaskActivity" />
         <activity android:name=".AttendanceM" />
         <activity android:name=".WorkCompleteFormActivity" />
         <activity android:name=".WorkViewActivity" />

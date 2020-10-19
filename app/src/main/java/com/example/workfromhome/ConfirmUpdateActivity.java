@@ -16,9 +16,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class confirm_update extends AppCompatActivity {
+public class ConfirmUpdateActivity extends AppCompatActivity {
 
-    private static final String TAG = "tasks";
+    private static final String TAG = "TasksActivity";
     String update_id;
     EditText u_eid, u_date, u_task;
     Button confirm_update;
@@ -32,7 +32,7 @@ public class confirm_update extends AppCompatActivity {
         setContentView(R.layout.activity_confirm_update);
 
         Intent intent = getIntent();
-        update_id = intent.getStringExtra(update.update_eid);
+        update_id = intent.getStringExtra(UpdateTaskActivity.update_eid);
 
 
         final DatabaseReference readRef = FirebaseDatabase.getInstance().getReference().child("Add_Task").child(update_id);

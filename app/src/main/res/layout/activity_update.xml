@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".update"
+    tools:context=".UpdateTaskActivity"
     android:background="@drawable/qq">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".add_task">
+        tools:context=".AddTaskActivity">
 
         <TextView
             android:id="@+id/textView9"
@@ -57,7 +57,7 @@
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".assign_task"
+            tools:context=".AssignTaskActivity"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="-140dp">
 
@@ -133,17 +133,15 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+                app:layout_constraintTop_toBottomOf="@+id/textView22"
+                tools:ignore="UnknownId" />
 
             <Button
                 android:id="@+id/c_update"
                 android:layout_width="187dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="119dp"
-                android:layout_marginLeft="119dp"
                 android:layout_marginEnd="92dp"
-                android:layout_marginRight="92dp"
-                android:layout_marginBottom="157dp"
                 android:background="@drawable/custom_buttons"
                 android:fadingEdge="horizontal"
                 android:filterTouchesWhenObscured="true"
@@ -154,10 +152,11 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/deletebtn" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.651" />
 
             <TextView
-                android:id="@+id/textView22"
+                android:id="@+id/testcase5"
                 android:layout_width="363dp"
                 android:layout_height="43dp"
                 android:layout_marginStart="65dp"

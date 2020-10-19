@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class update extends AppCompatActivity {
+public class UpdateTaskActivity extends AppCompatActivity {
 
     Button update;
     public static String update_eid;
@@ -24,7 +24,7 @@ public class update extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                Intent update_intent = new Intent(update.this, confirm_update.class);
+                Intent update_intent = new Intent(UpdateTaskActivity.this, ConfirmUpdateActivity.class);
                 TextView textView = findViewById(R.id.deletebtn);
                 String updateid = textView.getText().toString();
 

@@ -24,7 +24,7 @@ public class taskTypeActivity extends AppCompatActivity {
         btnAssignTask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent3 = new Intent(taskTypeActivity.this, assign_task.class);
+                Intent intent3 = new Intent(taskTypeActivity.this, AssignTaskActivity.class);
                 startActivity(intent3);
             }
         });

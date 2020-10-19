@@ -17,9 +17,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class tasks extends AppCompatActivity {
+public class TasksActivity extends AppCompatActivity {
 
-    private static final String TAG = "tasks";
+    private static final String TAG = "TasksActivity";
     String employeeID;
     TextView eid, date, task;
     Button assign,deleteBtn;

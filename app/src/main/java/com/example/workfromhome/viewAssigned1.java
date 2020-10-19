@@ -23,7 +23,7 @@ public class viewAssigned1 extends AppCompatActivity {
         check_assigned.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(viewAssigned1.this, tasks.class);
+                Intent intent = new Intent(viewAssigned1.this, TasksActivity.class);
                 EditText editText1 = (EditText) findViewById(R.id.tveid);
                 String empid = editText1.getText().toString();
 
@@ -39,7 +39,7 @@ public class viewAssigned1 extends AppCompatActivity {
 
     public void tasks(View view4) {
 
-        Intent intent4 = new Intent(this, tasks.class);
+        Intent intent4 = new Intent(this, TasksActivity.class);
         startActivity(intent4);
     }
 

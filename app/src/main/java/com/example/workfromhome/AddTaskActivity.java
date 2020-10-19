@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class add_task extends AppCompatActivity {
+public class AddTaskActivity extends AppCompatActivity {
 
     EditText eid, date, task;
     Button assign;
@@ -55,7 +55,7 @@ public class add_task extends AppCompatActivity {
 
                         Toast.makeText(getApplicationContext(), "Successfully added", Toast.LENGTH_SHORT).show();
                         clearControls();
-                        Intent intent11 = new Intent(add_task.this, Home.class);
+                        Intent intent11 = new Intent(AddTaskActivity.this, Home.class);
                         startActivity(intent11);
                     }
                 } catch (NumberFormatException e) {

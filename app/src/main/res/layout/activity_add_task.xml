@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".add_task"
+    tools:context=".AddTaskActivity"
     android:background="@drawable/qq">
 
     <Button
@@ -35,7 +35,7 @@
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".assign_task"
+        tools:context=".AssignTaskActivity"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="250dp">
 
@@ -54,7 +54,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/testcase2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/signika_light"

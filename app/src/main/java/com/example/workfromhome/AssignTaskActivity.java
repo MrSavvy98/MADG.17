@@ -6,7 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class assign_task extends AppCompatActivity {
+public class AssignTaskActivity extends AppCompatActivity {
 
 
     @Override
@@ -16,7 +16,7 @@ public class assign_task extends AppCompatActivity {
     }
 
     public void addTasks(View view2) {
-        Intent intent2 = new Intent(this, add_task.class);
+        Intent intent2 = new Intent(this, AddTaskActivity.class);
         startActivity(intent2);
     }
 
@@ -27,7 +27,7 @@ public class assign_task extends AppCompatActivity {
 
 
     public void update(View view5) {
-        Intent intent5 = new Intent(this, update.class);
+        Intent intent5 = new Intent(this, UpdateTaskActivity.class);
         startActivity(intent5);
     }
 
